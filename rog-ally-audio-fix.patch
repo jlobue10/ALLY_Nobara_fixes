@@ -1,7 +1,7 @@
-diff --git a/sound/pci/hda/cd35l41_hda_property.c b/sound/pci/hda/cd35l41_hda_property.c
+diff --git a/sound/pci/hda/cd35l41_hda_property.c b/sound/pci/hda/cs35l41_hda_property.c
 index 6b704fd..d63617f 100644
---- a/sound/pci/hda/cd35l41_hda_property.c
-+++ b/sound/pci/hda/cd35l41_hda_property.c
+--- a/sound/pci/hda/cs35l41_hda_property.c
++++ b/sound/pci/hda/cs35l41_hda_property.c
 @@ -6,7 +6,9 @@
  //
  // Author: Stefan Binding <sbinding@opensource.cirrus.com>
