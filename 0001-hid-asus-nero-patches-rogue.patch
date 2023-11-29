@@ -817,7 +817,7 @@ index ec58df0..b6179d7 100644
 + 	return ret;
 +}
 +
-++static int __maybe_unused asus_suspend(struct hid_device *hdev, struct pm_message)
++static int __maybe_unused asus_suspend(struct hid_device *hdev, struct pm_message)
 + {
 + 	struct asus_drvdata *drvdata = hid_get_drvdata(hdev);
 + 
