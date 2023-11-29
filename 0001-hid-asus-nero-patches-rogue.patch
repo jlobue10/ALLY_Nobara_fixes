@@ -758,7 +758,7 @@ index ec58df0..b6179d7 100644
 +	int ret = 0;
 +
  	struct asus_drvdata *drvdata = hid_get_drvdata(hdev);
-+	+	if (drvdata != NULL) {
++	if (drvdata != NULL) {
 +		return -EINVAL;
 +	}
  
