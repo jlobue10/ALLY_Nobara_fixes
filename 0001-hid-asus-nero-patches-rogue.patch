@@ -461,9 +461,9 @@ index d31f834..0473793 100644
 +struct asus_rc71l {
 +	unsigned int usb_pipe;
 +
-+	struct mutex mutex; /* Mutex that protects everything below it */
-+
 +	struct platform_device *mcu_dev;
++
++	struct mutex mutex; /* Mutex that protects everything below it */
 +
 +	enum rc71l_controller_mode mode;
 +
