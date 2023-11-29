@@ -1,7 +1,7 @@
-diff --git a/sound/pci/hda/cs35l41_hda_property.c b/sound/pci/hda/cs35l41_hda_property.c
-index b62a4e6..9a79938 100644
---- a/sound/pci/hda/cs35l41_hda_property.c
-+++ b/sound/pci/hda/cs35l41_hda_property.c
+diff --git a/sound/pci/hda/cd35l41_hda_property.c b/sound/pci/hda/cd35l41_hda_property.c
+index 6b704fd..d63617f 100644
+--- a/sound/pci/hda/cd35l41_hda_property.c
++++ b/sound/pci/hda/cd35l41_hda_property.c
 @@ -6,7 +6,9 @@
  //
  // Author: Stefan Binding <sbinding@opensource.cirrus.com>
@@ -12,7 +12,7 @@ index b62a4e6..9a79938 100644
  #include <linux/string.h>
  #include "cs35l41_hda_property.h"
  
-@@ -74,6 +76,40 @@ static int hp_vision_acpi_fix(struct cs35l41_hda *cs35l41, struct device *physde
+@@ -117,6 +119,40 @@ static int asus_rog_2023_no_acpi(struct cs35l41_hda *cs35l41, struct device *phy
  	return 0;
  }
  
@@ -53,11 +53,12 @@ index b62a4e6..9a79938 100644
  struct cs35l41_prop_model {
  	const char *hid;
  	const char *ssid;
-@@ -85,6 +121,7 @@ static const struct cs35l41_prop_model cs35l41_prop_model_table[] = {
- 	{ "CLSA0100", NULL, lenovo_legion_no_acpi },
- 	{ "CLSA0101", NULL, lenovo_legion_no_acpi },
- 	{ "CSC3551", "103C89C6", hp_vision_acpi_fix },
-+	{ "CSC3551", "104317F3", asus_rog_2023_ally_fix }, // ASUS ROG ALLY - i2c
- 	{}
- };
- 
+@@ -134,7 +170,7 @@ static const struct cs35l41_prop_model cs35l41_prop_model_table[] = {
+ 	{ "CSC3551", "10431483", asus_rog_2023_no_acpi }, // GU603V   spi, rst=1, spkr=1
+ 	{ "CSC3551", "10431493", asus_rog_2023_no_acpi }, // GV601V   spi, rst=1
+ 	{ "CSC3551", "10431573", asus_rog_2023_no_acpi }, // GZ301V   spi, rst=0
+-	{ "CSC3551", "104317F3", asus_rog_2023_no_acpi }, // ROG ALLY i2c, rst=0
++	{ "CSC3551", "104317F3", asus_rog_2023_ally_fix }, // ASUS ROG ALLY - i2c, rst=0
+ 	{ "CSC3551", "10431B93", asus_rog_2023_no_acpi }, // G614J    spi, rst=0
+ 	{ "CSC3551", "10431C9F", asus_rog_2023_no_acpi }, // G614JI   spi, rst=0
+ 	{ "CSC3551", "10431CAF", asus_rog_2023_no_acpi }, // G634J    spi, rst=1
