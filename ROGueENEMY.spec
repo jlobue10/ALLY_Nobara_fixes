@@ -72,5 +72,5 @@ systemctl daemon-reload
 /etc/ROGueENEMY/config.cfg
 
 %changelog
-* Wed Nov 29 2023 Denis Benato <dbenato.denis96@gmail.com> [1.2.0-1]
+* Wed Nov 29 2023 Denis Benato <dbenato.denis96@gmail.com> [1.4.0-1]
 - Initial package
