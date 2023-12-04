@@ -1312,7 +1312,8 @@ static struct hid_driver asus_driver = {
 	.input_configured       = asus_input_configured,
 #ifdef CONFIG_PM
 	.reset_resume           = asus_reset_resume,
-	.resume					= asus_resume,
+	.resume			= asus_resume,
+	.suspend		= asus_suspend,
 #endif
 	.event			= asus_event,
 	.raw_event		= asus_raw_event
